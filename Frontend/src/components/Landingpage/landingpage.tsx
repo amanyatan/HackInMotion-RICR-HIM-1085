@@ -41,7 +41,7 @@ export default function LandingPage() {
               OUR AI CAN{' '}
               <span className="font-serif italic text-[#1693A7]">UNDERSTAND</span>
               <br />
-              YOUR LATE-NIGHT STUDIES
+              YOUR STUDIES
             </h1>
           </motion.div>
 
