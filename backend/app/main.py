@@ -1,17 +1,26 @@
-"""COMUSE Auth API — FastAPI application entrypoint."""
+"""COSMOS Auth API — FastAPI application entrypoint."""
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api.routes import auth
+from app.api.routes import (
+    auth,
+    communication,
+    dashboard,
+    notes,
+    onboarding,
+    profile,
+    study_plan,
+    study_room,
+)
 from app.core.config import settings
 
 app = FastAPI(
-    title="COMUSE Auth API",
-    description="Backend API for COMUSE authentication. Talks to Supabase only.",
-    version="1.0.0",
+    title="COSMOS API",
+    description="Backend API for COSMOS — authentication, companion chat, onboarding, study sessions, notes and analytics. Talks to Supabase only.",
+    version="1.1.0",
 )
 
 # CORS: only the frontend origin may call this API.
@@ -19,11 +28,18 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["Content-Type", "Accept"],
 )
 
 app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
+app.include_router(onboarding.router)
+app.include_router(communication.router)
+app.include_router(notes.router)
+app.include_router(study_room.router)
+app.include_router(study_plan.router)
+app.include_router(dashboard.router)
+app.include_router(profile.router)
 
 
 @app.get("/api/health")

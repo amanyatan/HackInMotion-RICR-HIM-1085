@@ -22,8 +22,8 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: 'COMUSE',
-  description: 'COMUSE — AI Learning Companion',
+  title: 'COSMOS',
+  description: 'COSMOS — AI Learning Companion',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

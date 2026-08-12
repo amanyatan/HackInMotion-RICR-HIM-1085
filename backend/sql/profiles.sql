@@ -1,4 +1,4 @@
--- Optional: COMUSE `profiles` table, linked to Supabase Auth user IDs.
+-- Optional: COSMOS `profiles` table, linked to Supabase Auth user IDs.
 --
 -- Run this in the Supabase SQL editor (Project -> SQL -> New query).
 -- Auth works without it; this only stores the display name from signup.

@@ -1,5 +1,5 @@
 @echo off
-title COMUSE Backend - Dev Server
+title COSMOS Backend - Dev Server
 
 cd /d "%~dp0"
 
@@ -25,12 +25,12 @@ netstat -ano | findstr "LISTENING" | findstr ":8000" >nul 2>&1
 if not errorlevel 1 (
     echo [WARN] Port 8000 is already in use - backend may already be running.
     echo        Do NOT start a second instance.
-    echo        Close the other COMUSE window, then run this file again.
+    echo        Close the other COSMOS window, then run this file again.
     pause
     exit /b 0
 )
 
-echo Starting COMUSE backend with: uvicorn app.main:app --reload --port 8000
+echo Starting COSMOS backend with: uvicorn app.main:app --reload --port 8000
 echo API:   http://127.0.0.1:8000
 echo Docs:  http://127.0.0.1:8000/docs
 echo -----------------------------------------------------------

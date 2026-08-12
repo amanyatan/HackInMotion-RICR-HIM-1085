@@ -118,7 +118,7 @@ export default function Auth() {
       setSuccess(
         mode === "signin"
           ? "Signed in successfully. Welcome back!"
-          : "Account created — you're signed in. Welcome to COMUSE!"
+          : "Account created — you're signed in. Welcome to COSMOS!"
       );
     } catch {
       setError("Could not reach the server. Please check your connection and try again.");
@@ -239,7 +239,7 @@ export default function Auth() {
               md:text-black
             "
           >
-            Comuse
+            Cosmos
           </span>
         </div>
 

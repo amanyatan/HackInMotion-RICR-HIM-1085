@@ -1,15 +1,15 @@
-# COMUSE Design System
+# COSMOS Design System
 
 > **Version:** 1.0.0  
 > **Status:** Production  
-> **Product:** COMUSE — AI Learning Companion   
+> **Product:** COSMOS — AI Learning Companion   
 > **Last Updated:** 2026-08-12
 
 ---
 
 # 1. Design Direction
 
-COMUSE is an AI learning companion, not a traditional EdTech dashboard.
+COSMOS is an AI learning companion, not a traditional EdTech dashboard.
 
 The interface should feel:
 
@@ -26,7 +26,7 @@ The visual identity is based on a **dark-first interface** with strong typograph
 
 ### Core Principle
 
-> **The interface should disappear when the student needs to focus and become expressive when COMUSE needs to communicate.**
+> **The interface should disappear when the student needs to focus and become expressive when COSMOS needs to communicate.**
 
 ---
 
@@ -108,7 +108,7 @@ Do not make every element teal.
 
 4. Typography
 
-COMUSE uses three typefaces.
+COSMOS uses three typefaces.
 
 4.1 Sora
 
@@ -176,7 +176,7 @@ Selected words inside headings
 Example:
 
 Learn smarter.
-Learn with COMUSE.
+Learn with COSMOS.
 
 Only selected words should use Instrument Serif.
 
@@ -358,7 +358,7 @@ Use subtle borders instead of heavy shadows whenever possible.
 
 14. Shadows
 
-COMUSE uses minimal shadows.
+COSMOS uses minimal shadows.
 
 --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
 --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
@@ -585,7 +585,7 @@ Warning
 Info
 25. AI Interface
 
-COMUSE AI has five visual states.
+COSMOS AI has five visual states.
 
 Idle
 Minimal presence
@@ -632,13 +632,13 @@ Never use aggressive flashing animations.
 
 27. Learning Interview
 
-The Learning Interview is COMUSE's signature onboarding experience.
+The Learning Interview is COSMOS's signature onboarding experience.
 
 Instead of a long traditional form:
 
 Login
  ↓
-Meet COMUSE
+Meet COSMOS
  ↓
 Conversation
  ↓
@@ -821,7 +821,7 @@ Background: #0D0D0D
 Border: #333333
 34. Adaptive Replanning
 
-When COMUSE changes a plan, the change should be visible.
+When COSMOS changes a plan, the change should be visible.
 
 Example:
 
@@ -844,7 +844,7 @@ Example:
 
 No learning goal yet.
 
-Tell COMUSE what you want to learn
+Tell COSMOS what you want to learn
 and we'll build your first plan.
 
 [Start Learning]
@@ -1127,7 +1127,7 @@ Landing
 
 Goal:
 
-Create curiosity → Explain COMUSE → Drive interaction
+Create curiosity → Explain COSMOS → Drive interaction
 
 Use stronger animation and editorial typography.
 
@@ -1225,7 +1225,7 @@ Performance
  No unnecessary dependencies
 51. Final Design Rule
 
-COMUSE should not look like another generic AI dashboard.
+COSMOS should not look like another generic AI dashboard.
 
 It should feel like:
 

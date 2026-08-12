@@ -1,5 +1,5 @@
 {
-  "name": "comuse-frontend",
+  "name": "cosmos-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
     "@radix-ui/react-slot": "^1.0.5",
     "@splinetool/react-spline": "^4.1.0",
     "framer-motion": "^11.0.0",

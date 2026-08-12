@@ -77,7 +77,7 @@ export default function LandingPage() {
             <div className="relative h-9 w-9 shrink-0 sm:h-10 sm:w-10">
               <Image
                 src="/Comus.svg"
-                alt="Comuse"
+                alt="Cosmos"
                 fill
                 priority
                 className="object-contain"
@@ -94,61 +94,82 @@ export default function LandingPage() {
                 sm:text-lg
               "
             >
-              Comuse
+              Cosmos
             </span>
           </motion.div>
 
           {/* GET STARTED */}
-          <MotionLink
-            href="/login"
-            initial={shouldReduceMotion ? false : { opacity: 0, y: -10 }}
-            animate={
-              shouldReduceMotion
-                ? { opacity: 1 }
-                : { opacity: 1, y: 0 }
-            }
-            transition={{
-              duration: shouldReduceMotion ? 0 : 0.5,
-              delay: shouldReduceMotion ? 0 : 0.1,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="
-              inline-flex
-              h-11
-              items-center
-              justify-center
-              rounded-[10px]
-              bg-[#1693A7]
-              px-5
-              font-jakarta
-              text-sm
-              font-extrabold
-              tracking-[-0.01em]
-              text-white
-              shadow-[0_8px_30px_rgba(22,147,167,0.18)]
-              transition-all
-              duration-200
-              ease-out
+          <div className="flex items-center gap-3">
+            <MotionLink
+              href="/study"
+              initial={shouldReduceMotion ? false : { opacity: 0, y: -10 }}
+              animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
+              transition={{
+                duration: shouldReduceMotion ? 0 : 0.5,
+                delay: shouldReduceMotion ? 0 : 0.05,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="
+                inline-flex h-11 items-center justify-center rounded-[10px]
+                border border-border px-5 font-jakarta text-sm font-semibold
+                tracking-[-0.01em] text-white transition-all duration-200 ease-out
+                hover:border-border-hover hover:bg-surface-hover sm:h-12 sm:px-6
+              "
+            >
+              Study Mode
+            </MotionLink>
 
-              hover:-translate-y-[1px]
-              hover:bg-[#1BAFC5]
-              hover:shadow-[0_10px_35px_rgba(22,147,167,0.30)]
+            <MotionLink
+              href="/login"
+              initial={shouldReduceMotion ? false : { opacity: 0, y: -10 }}
+              animate={
+                shouldReduceMotion
+                  ? { opacity: 1 }
+                  : { opacity: 1, y: 0 }
+              }
+              transition={{
+                duration: shouldReduceMotion ? 0 : 0.5,
+                delay: shouldReduceMotion ? 0 : 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="
+                inline-flex
+                h-11
+                items-center
+                justify-center
+                rounded-[10px]
+                bg-[#1693A7]
+                px-5
+                font-jakarta
+                text-sm
+                font-extrabold
+                tracking-[-0.01em]
+                text-white
+                shadow-[0_8px_30px_rgba(22,147,167,0.18)]
+                transition-all
+                duration-200
+                ease-out
 
-              active:translate-y-0
-              active:bg-[#117C8D]
+                hover:-translate-y-[1px]
+                hover:bg-[#1BAFC5]
+                hover:shadow-[0_10px_35px_rgba(22,147,167,0.30)]
 
-              focus-visible:outline-none
-              focus-visible:ring-2
-              focus-visible:ring-[#1693A7]
-              focus-visible:ring-offset-2
-              focus-visible:ring-offset-black
+                active:translate-y-0
+                active:bg-[#117C8D]
 
-              sm:h-12
-              sm:px-6
-            "
-          >
-            Get Started
-          </MotionLink>
+                focus-visible:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#1693A7]
+                focus-visible:ring-offset-2
+                focus-visible:ring-offset-black
+
+                sm:h-12
+                sm:px-6
+              "
+            >
+              Get Started
+            </MotionLink>
+          </div>
         </nav>
       </header>
 

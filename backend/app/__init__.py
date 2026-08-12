@@ -1,1 +1,1 @@
-"""COMUSE backend API package."""
+"""COSMOS backend API package."""
