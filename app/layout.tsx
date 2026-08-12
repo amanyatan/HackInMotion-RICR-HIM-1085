@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Sora, Plus_Jakarta_Sans, Instrument_Serif } from 'next/font/google';
+import StyledComponentsRegistry from '@/lib/styled-components-registry';
 import '@/app/globals.css';
 
 const sora = Sora({
@@ -18,7 +19,7 @@ const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
   variable: '--font-serif',
   weight: ['400'],
-  style: ['normal', 'italic'],
+  style: 'normal',
 });
 
 export const metadata: Metadata = {
@@ -29,7 +30,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sora.variable} ${plusJakartaSans.variable} ${instrumentSerif.variable}`}>
-      <body>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
